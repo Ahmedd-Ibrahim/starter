@@ -35,10 +35,6 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 
     Route::resource('users', 'UserAPIController');
 
-    Route::resource('app_settings', 'AppSettingAPIController');
 });
 
-Route::get('settings/about', 'AppSettingAPIController@about');
-Route::get('settings/term', 'AppSettingAPIController@term');
-Route::get('settings/condation', 'AppSettingAPIController@appCondation');
-Route::get('settings/review', 'AppSettingAPIController@review');
+

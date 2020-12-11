@@ -32,8 +32,6 @@ Route::get('test',function (){
         Route::resource('users', 'UserController');
 
 
-        Route::resource('appSettings', 'AppSettingController');
-
     });
 
 
@@ -44,7 +42,6 @@ Route::get('/', function () {
 });
 
 Auth::routes(['verify' => true]);
-
 
 
 // Infyom Routes
